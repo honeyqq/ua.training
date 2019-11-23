@@ -11,16 +11,16 @@ public class Model {
     private List<Integer> yourAttempts = new ArrayList<>();
 
     // [1-99]
-    public void setSecretValue(){
-        secretValue = (int)Math.ceil(Math.random()*
+    public void setSecretValue() {
+        secretValue = (int) Math.ceil(Math.random() *
                 (maxBarrier - minBarrier - 1) + minBarrier);
     }
 
-    public boolean checkValue (int value){
+    public boolean checkValue(int value) {
         yourAttempts.add(value);
-        if (value == secretValue){
+        if (value == secretValue) {
             return false;
-        } else if (value > secretValue){
+        } else if (value > secretValue) {
             maxBarrier = value;
         } else {
             minBarrier = value;
