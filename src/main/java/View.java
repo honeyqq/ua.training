@@ -10,7 +10,7 @@ public class View {
     public static final String CONGRATULATION = "CONGRATULATION! You WIN! Secret value = ";
     public static final String YOUR_WAY = "YOUR WAY = ";
 
-    // Utilities methods
+    // Utilities methods + corrections after comments on github
     public void printMessage(String message) {
         System.out.println(message);
     }
