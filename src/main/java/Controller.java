@@ -19,7 +19,6 @@ public class Controller {
         model.setMaxBarrier(GlobalConstants.PRIMARY_MAX_BARRIER);
 
         model.setSecretValue();
-        System.out.println(model.getSecretValue());
 
         while (model.checkValue(inputIntValueWithScanner(sc)));
 
@@ -28,7 +27,7 @@ public class Controller {
     }
 
     private int inputIntValueWithScanner(Scanner sc) {
-        int res = 0;
+        int res;
         view.printMessage(getInputIntMessage());
         while (true) {
             // check int-value

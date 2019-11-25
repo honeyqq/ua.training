@@ -11,9 +11,11 @@ public class Model {
     private List<Integer> yourAttempts = new ArrayList<>();
 
     // [1-99]
-    public void setSecretValue() {
+    //Test for this function was ignored, after making changes you should test it
+    public int setSecretValue() {
         secretValue = (int) Math.ceil(Math.random() *
                 (maxBarrier - minBarrier - 1) + minBarrier);
+        return secretValue;
     }
 
     public boolean checkValue(int value) {
